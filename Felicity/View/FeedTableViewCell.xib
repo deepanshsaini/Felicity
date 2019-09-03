@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="211" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="Felicity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="210.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjH-LG-qMf">
+                        <rect key="frame" x="8" y="8" width="393" height="194.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="wtA-LL-fWc">
+                                <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.79106288440000005" green="0.6013394474" blue="0.96923064010000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OPL-u9-PDm"/>
+                                    <constraint firstAttribute="width" constant="60" id="abZ-TI-nTq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzV-Kz-GIx">
+                                <rect key="frame" x="76" y="8" width="82" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-Qz-Beb">
+                                <rect key="frame" x="76" y="29.5" width="98" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The news feed loads here and no matter how long it is " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbI-nz-C8J">
+                                <rect key="frame" x="76" y="76" width="309" height="110.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NbI-nz-C8J" firstAttribute="top" secondItem="wtA-LL-fWc" secondAttribute="bottom" constant="8" id="2zA-xs-fbn"/>
+                            <constraint firstItem="wtA-LL-fWc" firstAttribute="leading" secondItem="BjH-LG-qMf" secondAttribute="leading" constant="8" id="XfZ-wq-T3z"/>
+                            <constraint firstItem="Qrx-Qz-Beb" firstAttribute="leading" secondItem="wtA-LL-fWc" secondAttribute="trailing" constant="8" id="aP6-cE-Qs5"/>
+                            <constraint firstItem="NbI-nz-C8J" firstAttribute="leading" secondItem="wtA-LL-fWc" secondAttribute="trailing" constant="8" id="ace-hp-Fvw"/>
+                            <constraint firstAttribute="trailing" secondItem="NbI-nz-C8J" secondAttribute="trailing" constant="8" id="bf2-64-mP9"/>
+                            <constraint firstItem="Qrx-Qz-Beb" firstAttribute="top" secondItem="lzV-Kz-GIx" secondAttribute="bottom" constant="1" id="d6d-Wx-Obp"/>
+                            <constraint firstAttribute="bottom" secondItem="NbI-nz-C8J" secondAttribute="bottom" constant="8" id="f07-6m-CCf"/>
+                            <constraint firstItem="wtA-LL-fWc" firstAttribute="top" secondItem="BjH-LG-qMf" secondAttribute="top" constant="8" id="hl6-da-6S4"/>
+                            <constraint firstItem="lzV-Kz-GIx" firstAttribute="top" secondItem="BjH-LG-qMf" secondAttribute="top" constant="8" id="i9k-nP-JZq"/>
+                            <constraint firstItem="lzV-Kz-GIx" firstAttribute="leading" secondItem="wtA-LL-fWc" secondAttribute="trailing" constant="8" id="mHE-Tn-RPV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BjH-LG-qMf" secondAttribute="trailing" constant="8" id="3AZ-6k-bDH"/>
+                    <constraint firstAttribute="bottom" secondItem="BjH-LG-qMf" secondAttribute="bottom" constant="8" id="F9p-L1-Yea"/>
+                    <constraint firstItem="BjH-LG-qMf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="HMW-pf-e7o"/>
+                    <constraint firstItem="BjH-LG-qMf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="l3w-gu-oCI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellView" destination="BjH-LG-qMf" id="GLG-Va-nG5"/>
+                <outlet property="postTextLbl" destination="NbI-nz-C8J" id="gAx-0O-Lrh"/>
+                <outlet property="profileImageView" destination="wtA-LL-fWc" id="oSh-2p-qA9"/>
+                <outlet property="timeLbl" destination="Qrx-Qz-Beb" id="zpl-hu-cSi"/>
+                <outlet property="usernameLbl" destination="lzV-Kz-GIx" id="Ix3-qF-DZa"/>
+            </connections>
+            <point key="canvasLocation" x="94.5" y="31.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imagePlaceHolder" width="360" height="360"/>
+    </resources>
+</document>
